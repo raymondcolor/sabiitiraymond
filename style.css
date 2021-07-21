@@ -1,0 +1,243 @@
+            ul {
+                list-style-type: none;
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 90%;
+                margin: 0;
+                background-color: white;
+                margin-left: -10px;
+                padding-left: 90px;
+                padding-right: 90px;
+            }
+            
+            li a {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: #170357;
+                margin-right: 20px;
+                padding: 7px;
+                padding-top: 10px;
+                font-family: 'arial', serif;
+                font-size: 14px;
+            }
+            
+            li {
+                /*this floats the links to right*/
+                float: right
+            }
+            
+            #image {
+                /*this floats my logo to the left*/
+                float: left;
+            }
+            
+            .active {
+                /*this indicates the active page color of the link changes*/
+                color: rgb(89, 170, 166);
+            }
+            /*this makes the links in the navigation bar zoom in when hovered*/
+            
+            li a:hover:not(.active) {
+                color: chocolate;
+            }
+            
+            .myheadings {
+                /*this is set to my headings*/
+                font-family: 'arial', serif;
+                color: #170357;
+                font-size: 30px;
+                font-weight: 100;
+            }
+            
+            p {
+                /*this sets my paragraphs in arail font type*/
+                font-family: 'arial', serif;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 25px;
+            }
+            
+            .mybighead {
+                font-size: 100px;
+                font-family: arial, serif;
+                font-weight: 100;
+                letter-spacing: 3px;
+            }
+            
+            .aboutme {
+                font-family: arail, serif;
+                font-size: 40px;
+                font-weight: 100;
+                color: white;
+            }
+            
+            #pafooter {
+                /*this is for the text in the footer*/
+                font-size: 14px;
+            }
+            
+            .flex-container {
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+                margin-left: -10px;
+                margin-right: -5px;
+            }
+            
+            .myheader {
+                background-color: #170357;
+                color: white;
+                flex: 100%;
+                height: 400px;
+                padding: 70px 90px 0px 90px;
+            }
+            
+            .flex-items-left {
+                background-image: url('./images/backg.jpg');
+                flex: 50%;
+                height: 500px;
+                text-align: center;
+            }
+            
+            .flex-items-right {
+                background-image: url('./images/backg.jpg');
+                flex: 50%;
+                height: 500px;
+                padding-left: 130px;
+            }
+            
+            .flex-items-left2 {
+                background-color: white;
+                flex: 50%;
+                height: 350px;
+                padding-left: 90px;
+                padding-top: 40px;
+                padding-right: 90px;
+            }
+            
+            .flex-items-right2 {
+                background-color: white;
+                flex: 50%;
+                height: 350px;
+                padding-left: 90px;
+                padding-top: 90px;
+                padding-right: 90px;
+            }
+            
+            .aboutheader {
+                background-color: #170357;
+                flex: 100%;
+                height: 200px;
+                padding-left: 90px;
+                padding-right: 90px;
+            }
+            
+            .myfooter {
+                background-color: #170357;
+                height: 300px;
+                flex: 50%;
+                padding: 20px 90px 0px 90px;
+                color: white;
+            }
+            
+            .myfooter-icons {
+                background-color: #170357;
+                text-align: left;
+                flex: 50%;
+                padding: 40px 90px 0px 90px;
+                color: white;
+                line-height: 3px;
+            }
+            
+            .lnk {
+                color: white;
+                text-decoration: none;
+            }
+            
+            .profile {
+                border-radius: 50%;
+            }
+            
+            .flex-items-left3 {
+                background-color: white;
+                flex: 50%;
+                height: 500px;
+                padding: 40px 90px 40px 90px;
+            }
+            
+            .flex-items-right3 {
+                background-color: white;
+                flex: 50%;
+                height: 500px;
+                text-align: center;
+                padding-top: 40px;
+                padding-right: 90px;
+                padding-left: 90px;
+            }
+            
+            .illustration {
+                width: 100%;
+                /*this makes the image to fit on smaller screens automatically*/
+                display: block;
+            }
+            
+            @media screen and (max-width: 900px) {
+                .flex-container {
+                    flex-direction: column;
+                    width: auto;
+                }
+                .flex-items-right {
+                    padding: 20px 40px 20px 40px;
+                }
+                .flex-items-left2 {
+                    padding: 20px 40px 20px 40px;
+                }
+                .flex-items-right2 {
+                    padding-left: 10px;
+                    padding: 20px 40px 20px 40px;
+                }
+                .mybighead {
+                    font-size: 50px;
+                }
+                .myheader {
+                    padding: 20px 40px 20px 40px;
+                    height: 300px;
+                }
+                .flex-items-left3 {
+                    padding: 30px 40px 30px 40px;
+                }
+                .flex-items-right3 {
+                    height: 350px;
+                    padding: 30px 40px 30px 40px;
+                }
+                .hide-contact {
+                    display: none;
+                }
+                ul {
+                    position: sticky;
+                    top: 0;
+                    padding-left: 40px;
+                }
+                .myfooter {
+                    padding: 20px 40px 20px 40px;
+                }
+                .myfooter-icons {
+                    padding: 20px 40px 20px 40px;
+                }
+                .aboutheader {
+                    padding-left: 40px;
+                }
+                li a {
+                    padding: 3px;
+                    margin-right: 40px;
+                    display: block;
+                }
+                li {
+                    float: right;
+                }
+                .breaks {
+                    display: none;
+                }
+            }
